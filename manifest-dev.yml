@@ -4,6 +4,6 @@ applications:
   memory: 512M
   instances: 1
   host: rockme-dev
-services:
-- rock-db
+#services:
+#- rock-db
 

@@ -1,7 +1,8 @@
 ---
 applications:
-- name: spring-music
+- name: rockme
   memory: 512M
-  instances: 1
-  host: s1p-10-spring-music
-  buildpack: java_buildpack
+  instances: 5
+  host: rockme
+services:
+- rock-db

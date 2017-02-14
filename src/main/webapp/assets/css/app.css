@@ -9,7 +9,7 @@
 }
 
 /* Green banner */
-.navbar .container {
+/*.navbar .container {
     background-color: #008a00;
     background-image: -moz-linear-gradient(top, #008a00, #006b00);
     background-image: -ms-linear-gradient(top, #008a00, #006b00);
@@ -17,9 +17,9 @@
     background-image: -webkit-linear-gradient(top, #008a00, #006b00);
     background-image: -o-linear-gradient(top, #008a00, #006b00);
     background-image: linear-gradient(top, #008a00, #006b00);
-}
+}/*
 /* Blue banner */
-/*.navbar .container {
+.navbar .container {
     background-color: #008a00;
     background-image: -moz-linear-gradient(top, #00008a, #00006b);
     background-image: -ms-linear-gradient(top, #00008a, #00006b);
@@ -28,7 +28,7 @@
     background-image: -o-linear-gradient(top, #00008a, #00006b);
     background-image: linear-gradient(top, #00008a, #00006b);
 }
-*/
+
 .navbar .navbar-brand {
     color: white;
 }

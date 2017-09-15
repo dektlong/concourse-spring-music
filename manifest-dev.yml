@@ -1,7 +1,7 @@
 ---
 applications:
 - name: rockme
-  memory: 512M
+  memory: 1G
   instances: 1
   host: rockme-dev
 #services:

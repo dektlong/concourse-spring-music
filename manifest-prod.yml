@@ -2,7 +2,7 @@
 applications:
 - name: rockme
   memory: 1G
-  instances: 5
+  instances: 3
   host: rockme
 services:
 - rock-db

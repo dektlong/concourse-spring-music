@@ -3,6 +3,6 @@ applications:
 - name: rockme
   memory: 1G
   instances: 1
-  host: rockme-test
+  random-route: true
 services:
 - rock-db

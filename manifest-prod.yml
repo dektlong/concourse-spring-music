@@ -3,6 +3,7 @@ applications:
 - name: rockme
   memory: 1G
   instances: 3
-  host: rockme
+  env:
+    JBP_CONFIG_SPRING_AUTO_RECONFIGURATION: '{enabled: false}
 services:
 - rock-db

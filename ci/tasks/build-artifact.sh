@@ -6,4 +6,7 @@ version=`cat version/number`
 cd git-repo
 ./gradlew assemble -Pversion=$version
 cp build/libs/*.jar ../artifact-dir/
+cd ../artifact-dir
+echo "files copied to artifact-dir"
+ls
 

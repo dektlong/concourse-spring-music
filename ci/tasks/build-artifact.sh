@@ -4,6 +4,6 @@ set -e
 export GRADLE_OPTS=-Dorg.gradle.native=false
 version=`cat version/number`
 cd git-repo
-./gradlew assemble
+./gradlew assemble -Pversion=$version
 cp build/libs/*.jar ../artifact-dir/
 

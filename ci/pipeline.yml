@@ -20,7 +20,7 @@ jobs:
       timeout: 5m
     - put: release-candidate
       params:
-        file: artifact-dir/spring-music*.war
+        file: artifact-dir/*.jar
     - put: git-repo
       params:
         repository: git-repo
@@ -42,8 +42,8 @@ jobs:
     - put: deploy-test-app
       params:
         manifest: git-repo/manifest-test.yml
-        current_app_name: spring-music-test
-        path: release-candidate/spring-music*.war
+        current_app_name: rockme-test
+        path: release-candidate/rockme*.jar
     - task: verify
       file: git-repo/ci/tasks/verify-test.yml
       params:
@@ -63,8 +63,8 @@ jobs:
     - put: deploy-uat-app
       params:
         manifest: git-repo/manifest-uat.yml
-        current_app_name: spring-music-uat
-        path: release-candidate/spring-music*.war
+        current_app_name: rockme-uat
+        path: release-candidate/rockme*.jar
 
   - name: ship-it
     serial_groups: [version]
@@ -81,15 +81,15 @@ jobs:
     - task: prepare-final
       file: git-repo/ci/tasks/prepare-final.yml
       params:
-        base_name: spring-music
+        base_name: rockme
     - put: production-release
       params:
-        file: final-dir/spring-music*.war
+        file: final-dir/rockme*.jar
     - put: deploy-production-app
       params:
         manifest: git-repo/manifest-prod.yml
-        current_app_name: spring-music
-        path: final-dir/spring-music*.war
+        current_app_name: rockme
+        path: final-dir/rockme*.jar
 
   - name: major
     serial_groups: [ version ]

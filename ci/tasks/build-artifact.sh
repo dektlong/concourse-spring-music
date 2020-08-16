@@ -6,4 +6,4 @@ version=`cat version/number`
 echo "version=" $version
 cd git-repo
 gradle assemble -Pversion=$version
-cp build/libs/rockme-1.0 ../artifact-dir/
+cp build/libs/rockme.jar ../artifact-dir/

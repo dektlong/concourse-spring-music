@@ -4,8 +4,8 @@ platform: linux
 image_resource:
   type: docker-image
   source:
-    repository: brianbyers/concourse-cfcli
-    tag: "latest"
+     repository: nulldriver/cf-cli-resource
+     tag: latest
 
 
 inputs:

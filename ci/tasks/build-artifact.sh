@@ -4,8 +4,8 @@ set -e
 export GRADLE_OPTS=-Dorg.gradle.native=false
 version=`cat version/number`
 cd git-repo
-gradle assemble -Pversion=$version
+gradle assemble -b ../../build.gradle -Pversion=$version
 #cp build/libs/*.jar ../artifact-dir/
-cp build/libs/*.jar ../artifact-dir/rockme-1.0.jar
+cp build/libs/*.jar ../artifact-dir/
 
 
